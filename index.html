@@ -479,14 +479,14 @@ function getlifeSteal(n) {
 	  const c8 = calculateUpgradeCost(8);
 
       // Update button text with cost and level
-      b1.innerHTML = "Upgrade 1 <br>" + format(c1,0) +" coins <br> Get 20% more coins [+" + format(Upgrades.coinMult*20,0) + "%]";
-	  b2.innerHTML = "Upgrade 2 <br>" + format(c2,0) + " coins <br> +1.5 starting health [+" + format(Upgrades.baseStat*1.5,1) + "] and +0.5 starting attack [+" + format(Upgrades.baseStat*0.5,1) + "]";
-	  b3.innerHTML = "Upgrade 3 <br>" + format(c3,0) + " coins <br> Gain +0.2% of defeated enemies' stats [" + format(Upgrades.statSteal/5,1) + "]%";
-	  b4.innerHTML = "Upgrade 4 <br>" + format(c4,0) + " coins <br> Increase health and attack by 1% [+" + format(Upgrades.statMul,0) + "%]";
-	  b5.innerHTML = "Upgrade 5 <br>" + format(c5,0) + " coins <br> Decrease tick duration [" + format(1000*0.2**(Upgrades.frameRate/300),0) + " milliseconds];
-	  b6.innerHTML = "Upgrade 6 <br>" + format(c6,0) + " coins <br> Get 20% more experience [+" + format(Upgrades.expMult*20,0) + "%]";
-	  b7.innerHTML = "Upgrade 7 <br>" + format(c7,0) + " coins <br> Gain 50% more stats upon levelling up [+" + format(Upgrades.statGainOnLvUp*50,0) + "%]";
-	  b8.innerHTML = "Upgrade 8 <br>" + format(c8,0) + " coins <br> Gain +0.5% [" + format(Upgrades.lifeSteal*0.5,1) + "%] of damage dealt as health; excess health weakly increases your maximum.";
+      b1.innerHTML = "More Coins <br>" + format(c1,0) +" coins <br> Get 20% more coins [+" + format(Upgrades.coinMult*20,0) + "%]";
+	  b2.innerHTML = "Starting Stats <br>" + format(c2,0) + " coins <br> +1.5 starting health [+" + format(Upgrades.baseStat*1.5,1) + "] and +0.5 starting attack [+" + format(Upgrades.baseStat*0.5,1) + "]";
+	  b3.innerHTML = "Stat Steal <br>" + format(c3,0) + " coins <br> Gain +0.2% of defeated enemies' stats [" + format(Upgrades.statSteal/5,1) + "]%";
+	  b4.innerHTML = "Stat Boost <br>" + format(c4,0) + " coins <br> Increase health and attack by 1% [+" + format(Upgrades.statMul,0) + "%]";
+	  b5.innerHTML = "Game Speed <br>" + format(c5,0) + " coins <br> Decrease tick duration [" + format(1000*0.2**(Upgrades.frameRate/300),0) + " milliseconds];
+	  b6.innerHTML = "More Experience <br>" + format(c6,0) + " coins <br> Get 20% more experience [+" + format(Upgrades.expMult*20,0) + "%]";
+	  b7.innerHTML = "Stat Growth <br>" + format(c7,0) + " coins <br> Gain 50% more stats upon levelling up [+" + format(Upgrades.statGainOnLvUp*50,0) + "%]";
+	  b8.innerHTML = "Life Steal <br>" + format(c8,0) + " coins <br> Gain +0.5% [" + format(Upgrades.lifeSteal*0.5,1) + "%] of damage dealt as health; excess health weakly increases your maximum.";
     }
 	
 	function saveGame () {
